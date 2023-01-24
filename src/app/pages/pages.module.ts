@@ -13,11 +13,15 @@ import { HomeComponent } from './home/home.component';
 import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
+import { ListproductosComponent } from './listproductos/listproductos.component';
+import { NewproductosComponent } from './newproductos/newproductos.component';
 
 @NgModule({
   declarations: [
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    ListproductosComponent,
+    NewproductosComponent
   ],
   imports: [
     CommonModule,
@@ -28,10 +32,12 @@ import { RouterLinkActive } from '@angular/router';
     ReactiveFormsModule,
     FormsModule,
     MatIconModule,
-    
-    
-
-
+  ],
+  exports: [
+    RegisterComponent,
+    HomeComponent,
+    ListproductosComponent,
+    NewproductosComponent,
   ]
 })
 export class PagesModule { }

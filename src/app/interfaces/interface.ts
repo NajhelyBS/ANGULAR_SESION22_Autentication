@@ -1,4 +1,4 @@
-export interface Interface {
+export interface Farmacia {
 
     id?:string;
     producto:string;
