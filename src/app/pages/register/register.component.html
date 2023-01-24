@@ -1,0 +1,58 @@
+<body>
+    <main class="d-flex justify-content-center">
+    
+        
+<!-- Material Input - form -->
+    <form class="example-form pb-5" [formGroup]="formRegistro" >
+
+        <p class="text-center pt-3 ">
+          <span> <mat-icon fontIcon="edit"></mat-icon></span>
+          Registrarse
+          <span> <mat-icon fontIcon="edit"></mat-icon></span>
+        </p>
+
+
+        <!-- Email -->
+        <div class="mt-5 pb-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Correo</mat-label>
+            <input matInput placeholder="Admin"  id="email" formControlName="email" >
+          </mat-form-field>
+          
+
+
+        </div>
+        
+
+        <br>
+        <!-- Password -->
+        <div>
+        <mat-form-field class="example-full-width">
+            
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="123456"  formControlName="password">
+          </mat-form-field>
+      
+        </div>
+
+        <br>
+        
+<!-- /Material Input - form --> 
+     
+
+        <!--Buttton -->
+        <div class="d-flex justify-content-center">
+        <button class="form-control mt-4 py-2 mb-3" (click)="onSubmit()"
+        >Registrarse</button>
+
+        
+        <button class="form-control mt-4 py-2 mb-3"
+        routerLink = "/login"
+        >Inicia Sesión</button>
+
+      
+        
+        </div>
+    </form>
+</main>
+</body>

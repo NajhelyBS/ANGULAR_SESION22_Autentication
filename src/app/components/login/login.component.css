@@ -1,0 +1,61 @@
+body {
+    background-image: url(https://i.redd.it/bn5v01f214q61.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+form {
+  padding-top: 4em;
+    width: 50em;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+
+  mat-label {
+    color: #1C1A42;
+    font-weight: bolder;
+  }
+  
+p{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #DA9EAA;
+    text-shadow: 2px 2px 6px #E8D9D4;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #53567C;
+
+}
+
+mat-error {
+    background-color: #00c3ff4b;
+    border-radius: 20px;
+    color: #700707;
+}
+
+
+
+button {
+    background: #DA9EAA;;
+    background: linear-gradient(to right,#BE808F,#87709F);
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 12em;
+    letter-spacing: 2px;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px #1E2B60;
+}
