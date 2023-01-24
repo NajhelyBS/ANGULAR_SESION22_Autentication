@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
       Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: 'Inicio ',
+        title: 'Sesión iniciada con éxito',
         showConfirmButton: false,
         timer: 1500
       });
@@ -50,7 +50,12 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/home']);
   
     })
-    .catch(error =>  console.log(error))
+    .catch(error =>  console.log(error));
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'No te encuentras registrado',
+    })
     
   }
 
