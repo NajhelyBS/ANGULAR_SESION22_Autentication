@@ -55,8 +55,17 @@ onSubmit(){
     this.router.navigate(['/login']);
 
   })
-  .catch(error =>  console.log(error))
-  
+  .catch(error =>  
+   
+   
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Datos faltantes o incorrectos',
+    })
+    
+    );
+ 
 }
 
 }

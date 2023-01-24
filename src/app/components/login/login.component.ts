@@ -50,12 +50,13 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/home']);
   
     })
-    .catch(error =>  console.log(error));
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'No te encuentras registrado',
-    })
+    .catch(error => 
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'No te encuentras registrado',
+      })
+      ); 
     
   }
 
