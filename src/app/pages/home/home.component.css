@@ -12,9 +12,8 @@ body {
 }
 
 .nav-link {
-    color: rgb(87, 85, 78);
+    color: #F99832;
 }
-
 .nav-link {
     margin-right: 1.8em;
     letter-spacing: 2px;
@@ -23,11 +22,38 @@ body {
     width: 4.6em;
 }
 .item{
-    background: #44484b;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c8cbd1, #a0a9ad);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #edf0f5, #acafb3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: black;
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     color: black;
     font-weight: 700;
     border-radius: 5px;
     box-shadow: 0px 0px 2px 0.6px  rgb(10, 10, 10) ;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    -webkit-text-stroke-color: #F49030 ;
+    -webkit-text-stroke-width: 0.002px;
+}
+section{
+    padding: 3em;
+    margin-top: 5em;
+    background-color:#2c506394;
+    box-shadow: 0px 0px 3px 2px #17475F;
+}
+
+.card {
+    width: 25em;
+    background-color: #f1724bb9;
+}
+
+.card-image {
+    filter: drop-shadow(0px 0px 4px #f1724b);
+
+}
+
+.card-text {
+    padding: 2em;
 }

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 
 import {MatInputModule} from '@angular/material/input';
@@ -16,7 +15,6 @@ import { RouterLinkActive } from '@angular/router';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
     LoginComponent
   ],
   imports: [
@@ -30,7 +28,6 @@ import { RouterLinkActive } from '@angular/router';
     RouterLinkActive,
   ],
   exports: [
-    HeaderComponent,
     LoginComponent,
   ]
 })

@@ -10,19 +10,15 @@ import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 
-import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
-import { ListproductosComponent } from './listproductos/listproductos.component';
-import { NewproductosComponent } from './newproductos/newproductos.component';
+
 
 @NgModule({
   declarations: [
     RegisterComponent,
     HomeComponent,
-    ListproductosComponent,
-    NewproductosComponent
-  ],
+   ],
   imports: [
     CommonModule,
     RouterLink,
@@ -36,8 +32,6 @@ import { NewproductosComponent } from './newproductos/newproductos.component';
   exports: [
     RegisterComponent,
     HomeComponent,
-    ListproductosComponent,
-    NewproductosComponent,
   ]
 })
 export class PagesModule { }
